@@ -62,7 +62,7 @@ The installer saves phase timings and an immutable onboarding receipt under `.ar
 
 ## Other local hosts: source and MCP
 
-Use Git, npm and Node.js 26.11.1:
+Use Git, npm and Node.js 22.18 or later (`engines.node` in [package.json](../package.json); CI and the Docker image use 26.11.1, but no upgrade is required):
 
 ```sh
 git -c filter.lfs.process= -c filter.lfs.smudge= -c filter.lfs.required=false clone --depth 1 --single-branch --branch main https://github.com/nexu-io/openmotion.git
